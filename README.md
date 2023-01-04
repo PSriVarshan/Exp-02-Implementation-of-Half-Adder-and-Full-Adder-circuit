@@ -43,7 +43,7 @@ Program to design a half adder and full adder circuit and verify its truth table
 Developed by: P.Sri Varshan
 RegisterNumber:  22008051
 
-HALF ADDE
+HALF ADDER
 
 module exphalf(a,b,sum,carry);
 input a,b;
@@ -52,7 +52,7 @@ xor(sum,a,b);
 and(carry,a,b);
 endmodule
 
-
+FULL ADDER
 
 module expfull(a,b,c,sum,carry);
 input a,b,c;
