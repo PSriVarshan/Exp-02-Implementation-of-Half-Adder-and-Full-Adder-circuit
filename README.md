@@ -83,7 +83,7 @@ Timing Diagram for Half Adder
 
 Timing Diagram for Full Adder
 
-![time diag full](https://user-images.githubusercontent.com/114944059/210394253-4ccd65cc-ad36-43ed-859f-90bebaf72d83.png)
+![timingfulladder](https://user-images.githubusercontent.com/114944059/210628817-6e01936e-9e3d-4b94-a67d-992134fc2ba0.jpg)
 
 
 ### TRUTH TABLE 
