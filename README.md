@@ -40,25 +40,26 @@ If the output is 1, then the led glows.
 ### Program:
 ```
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+
 Developed by: P.Sri Varshan
 RegisterNumber:  22008051
 
 HALF ADDER
 
-module exphalf(a,b,sum,carry);
-input a,b;
-output sum,carry;
-xor(sum,a,b);
-and(carry,a,b);
+module halfadder(A,B,Sum,Carry);
+input A,B;
+output Sum,Carry;
+xor(Sum,A,B);
+and(Carry,A,B);
 endmodule
 
 FULL ADDER
 
-module expfull(a,b,c,sum,carry);
-input a,b,c;
-output sum,carry;
-assign sum = ((a^b)^c);
-assign carry = ((a&b)|(b&c)|(c&a));
+module fulladder(A,B,C,Sum,Carry);
+input A,B,C;
+output Sum,Carry;
+assign Sum = ((A^B)^C);
+assign Carry = ((A&B)|(B&C)|(C&A));
 endmodule
 
 ```
@@ -67,16 +68,18 @@ endmodule
 ### RTL
 RTL Realization for Half Adder
 
-![exphalf rtl](https://user-images.githubusercontent.com/114944059/210393281-7b7e5515-04b6-4b63-a754-2f58ea2bd669.jpg)
+![exphalf rtl](https://user-images.githubusercontent.com/114944059/210621185-796ace0f-4d7d-4cc0-8167-a38d3cb15a85.jpg)
+
 
 RTL Realization for Full Adder
 
-![expfull rtl](https://user-images.githubusercontent.com/114944059/210394541-f756ef71-0c80-46f2-8ba3-c489bcb2e1e3.jpg)
+![expfull rtl](https://user-images.githubusercontent.com/114944059/210624936-a0ff882f-d5e8-4e84-ae55-f0bf65965ab8.jpg)
 
 ### TIMING DIAGRAM
 Timing Diagram for Half Adder
 
-![time diag half](https://user-images.githubusercontent.com/114944059/210393555-13c253f9-79d6-49f1-baff-df6cc5ea736a.png)
+![timinghalfadder](https://user-images.githubusercontent.com/114944059/210625483-19d1b0d1-d351-43d4-b309-ec33937dd5e8.jpg)
+
 
 Timing Diagram for Full Adder
 
